@@ -65,14 +65,14 @@ void ndryshoni_te_dhenat_mjek(struct Mjek *p_mjeket,int *numerues_mjekesh){
     for(int i=0;i<*numerues_mjekesh;i++){
         mjek = *(p_mjeket+i);
         if(mjek.id == input){ 
-            index=i;//nese egziston nje mjek e etikojm index dhe ndalojm bredhjen
+            index=i;//nese ekziston nje mjek e etikojm index dhe ndalojm bredhjen
             break;
         }
         
     }
     if(index == -1){
         printf("Mjeku me kete ID nuk egziston\n");
-        return; // nese nuk egziston nje mjek ndalojm f(x).
+        return; // nese nuk ekziston nje mjek ndalojm f(x).
     } 
     
     printf("Te dhenat prezente: %d %s %s.\n",mjek.id,mjek.emri,mjek.specializimi);
